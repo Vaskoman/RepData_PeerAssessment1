@@ -215,7 +215,7 @@ hr {
 <pre><code>## package &#39;plyr&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\Users\Mental\AppData\Local\Temp\RtmpeSTDn8\downloaded_packages
+##  C:\Users\Mental\AppData\Local\Temp\Rtmp6lHCOp\downloaded_packages
 </code></pre>
 
 <pre><code class="r">library(plyr)
@@ -228,12 +228,7 @@ hr {
 <pre><code class="r">if (!file.exists(&quot;data.zip&quot;)) 
   {url &lt;- &quot;http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;}
 download.file (url, &quot;data.zip&quot;)
-</code></pre>
-
-<pre><code>## Error in as.character(x): cannot coerce type &#39;closure&#39; to vector of type &#39;character&#39;
-</code></pre>
-
-<pre><code class="r">if (!file.exists (&quot;activity.csv&quot;)) {unzip (&quot;data.zip&quot;)}
+if (!file.exists (&quot;activity.csv&quot;)) {unzip (&quot;data.zip&quot;)}
 data &lt;- read.csv(&quot;activity.csv&quot;,stringsAsFactors=FALSE)
 </code></pre>
 

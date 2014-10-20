@@ -15,7 +15,7 @@ install.packages("plyr")
 ## package 'plyr' successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-## 	C:\Users\Mental\AppData\Local\Temp\RtmpeSTDn8\downloaded_packages
+## 	C:\Users\Mental\AppData\Local\Temp\Rtmp6lHCOp\downloaded_packages
 ```
 
 ```r
@@ -31,13 +31,6 @@ The first step in this assignment requires the user to download the data. The fo
 if (!file.exists("data.zip")) 
   {url <- "http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"}
 download.file (url, "data.zip")
-```
-
-```
-## Error in as.character(x): cannot coerce type 'closure' to vector of type 'character'
-```
-
-```r
 if (!file.exists ("activity.csv")) {unzip ("data.zip")}
 data <- read.csv("activity.csv",stringsAsFactors=FALSE)
 ```
